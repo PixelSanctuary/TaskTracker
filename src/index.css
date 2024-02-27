@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.checkbox {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input,
+input:focus,
+select:focus,
+input[type="checkbox"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #000000;
+}
+
+.truncateOn3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

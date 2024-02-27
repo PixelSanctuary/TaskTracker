@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <HeaderBar Title="Task Tracker"/>
+    <TaskList :taskList="state.taskList"/>
+    <TaskForm v-if="state.showAddTaskForm"/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderBar from './components/HeaderBar.vue';
+import TaskList from './components/TaskList.vue';
+import TaskForm from './components/TaskForm.vue';
+import { state } from './store';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    HeaderBar,
+    TaskList,
+    TaskForm
+  },
+  setup() {
+    return { state };
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
