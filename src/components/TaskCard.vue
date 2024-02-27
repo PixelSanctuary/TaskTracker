@@ -2,7 +2,7 @@
   <section>
     <div class="flex items-center text-gray border border-lightSilver">
       <span
-        class="cursor-grab min-w-6 min-h-10 flex items-center justify-center"
+        class="cursor-grab min-w-6 h-10 flex items-center justify-center"
         v-html="svgIcons?.dragIcon"
       ></span>
       <fieldset
