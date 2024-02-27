@@ -38,6 +38,7 @@ Delete Task:
 
 Offers a button to delete tasks.
 Displays a confirmation modal before deletion.
+
 Styling:
 
 Styled using Tailwind CSS for a modern and responsive design.
@@ -50,3 +51,6 @@ Reactive Properties:
 Implements state management using reactive properties for efficient data handling.
 Additional Information
 This project showcases the integration of Vue 3 with Tailwind CSS, demonstrating a modern and responsive user interface.
+
+ *** *** *** *** ***
+Additional Feature:  you can drag and arrange the task based on priority
