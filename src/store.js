@@ -13,7 +13,7 @@ const state = reactive({
     title: "Work out",
     description: "Hit the GYM burn calories and get into shape, take good protiew for muccle growth",
     isCompleted: false,
-    riorityIndex: 1
+    priorityIndex: 1
   },
   {
     title: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
