@@ -13,7 +13,13 @@ const state = reactive({
     title: "Work out",
     description: "Hit the GYM burn calories and get into shape, take good protiew for muccle growth",
     isCompleted: false,
-    priorityIndex: 1
+    riorityIndex: 1
+  },
+  {
+    title: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a mi ut leo dictum lacinia. Duis nec libero malesuada metus aliquam euismod. Duis a ex blandit, volutpat felis nec, porta odio. Integer leo odio, placerat quis nulla vel, ultrices sodales nulla. Aliquam consequat elit vel libero consectetur, sed placerat libero maximus. Mauris non quam sit amet elit varius porta ac non erat. Suspendisse consequat finibus placerat",
+    isCompleted: false,
+    priorityIndex: 3
   }
 ],
   selectedTask: null,
