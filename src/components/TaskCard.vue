@@ -2,11 +2,11 @@
   <section>
     <div class="flex items-center text-gray border border-lightSilver">
       <span
-        class="cursor-grab w-6 h-10 flex items-center justify-center"
+        class="cursor-grab min-w-6 h-10 flex items-center justify-center"
         v-html="svgIcons?.dragIcon"
       ></span>
       <fieldset
-        class="h-10 w-10 cursor-pointer flex items-center justify-center border-x border-lightSilver"
+        class="h-10 min-w-10 cursor-pointer flex items-center justify-center border-x border-lightSilver"
       >
         <input class="cursor-pointer" :checked="isChecked" type="checkbox" />
       </fieldset>
