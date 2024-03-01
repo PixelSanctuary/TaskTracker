@@ -3,25 +3,28 @@
     class="absolute flex items-center justify-center w-screen h-smallScreen sm:h-appScreen bg-black bg-opacity-50 top-14 sm:top-16 z-40 p-3"
   >
     <form
-      class="rounded-lg border border-secondary bg-white p-10 space-y-5 max-h-[75%] overflow-auto"
+      class="rounded-lg border border-secondary bg-white p-10 space-y-5 max-h-[75%] overflow-auto min-w-[55vw] lg:min-w-[35vw]"
       @submit.prevent="addTask"
     >
+    <h1 class="w-full text-center text-xl font-semibold">{{ isTaskSelected ? "Add" : "Edit"}} Task Form</h1>
       <fieldset class="flex items-center">
         <input
-          class="py-1 px-3 border border-secondary rounded"
+          class="py-1 px-3 border border-secondary rounded w-full"
           placeholder="Enter Task Title"
           type="text"
           id="title"
           v-model="title"
+          maxlength="128"
           required
         />
       </fieldset>
       <fieldset class="flex items-center">
         <textarea
-          class="py-1 px-3 border border-secondary rounded"
+          class="py-1 px-3 border border-secondary rounded w-full"
           placeholder="Enter Task Description"
           id="description"
           v-model="description"
+          maxlength="256"
           required
         ></textarea>
       </fieldset>
