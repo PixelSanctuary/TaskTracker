@@ -18,12 +18,12 @@
       >
         <span
           @click="handleEdit(TaskIndex)"
-          class="cursor-pointer h-5 w-5 flex justify-center items-center border rounded border-islamicGreen text-islamicGreen"
+          class="cursor-pointer h-5 w-5 flex justify-center items-center border rounded border-islamicGreen hover:bg-islamicGreen hover:bg-opacity-30 text-islamicGreen"
           v-html="svgIcons?.editIcon"
         ></span>
         <span
           @click="handleDelet(TaskIndex)"
-          class="cursor-pointer h-5 w-5 flex justify-center items-center border rounded border-apple text-apple"
+          class="cursor-pointer h-5 w-5 flex justify-center items-center border rounded border-apple hover:bg-apple hover:bg-opacity-30 text-apple"
           v-html="svgIcons?.binIcon"
         ></span>
       </div>
